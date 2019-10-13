@@ -128,3 +128,23 @@
   /* align-content: flex-end; */
   /* align-content: flex-start; */
 }
+
+.flex-container{
+    padding: 0;
+    margin: 0;
+    background-color: teal;
+    list-style: none;
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: space-around;
+}
+.flex-item{
+    width: 200px;
+    height: 150px;
+    line-height: 150px;
+    font-size: 3rem;
+    color: white;
+    margin-top: 10px;
+    background-color: tomato;
+    text-align: center;
+}
