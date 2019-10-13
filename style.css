@@ -1,0 +1,130 @@
+.container-fdc {
+  display: flex;
+  flex-direction: column;
+}
+.container-fdr {
+  display: flex;
+  flex-direction: row;
+}
+.container-fdrr {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.container-fdcr {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.item {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  text-align: center;
+  background-color: darkcyan;
+}
+.flex-rap-r {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-rap-nr {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.flex-rap-rr {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+.flex-rap .item {
+  width: 20vw;
+  height: 20vw;
+  background-color: darksalmon;
+}
+
+/* flex-flow used for both flex-wrap and direction */
+
+.flex-justify {
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: darkslateblue;
+  /* justify-content: center; */
+  /* justify-content: flex-end; */
+  /* justify-content: flex-start; */
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+  justify-content: space-evenly;
+}
+.item-x {
+  width: 10vw;
+  height: 10vw;
+  background-color: deepskyblue;
+  text-align: center;
+}
+.item-y {
+  width: 30vw;
+  height: 10vw;
+  background-color: lawngreen;
+  text-align: center;
+}
+.item-z {
+  width: 20vw;
+  height: 10vw;
+  background-color: pink;
+  text-align: center;
+}
+
+.flex-align {
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: yellow;
+  width: 60vw;
+  height: 50vw;
+  /* align-items: center; */
+  /* align-items: flex-start; */
+  /* align-items: flex-end; */
+  /* align-items: baseline; */
+  /* align-items: stretch; */
+}
+.item-a {
+  width: 10vw;
+  height: 10vw;
+  background-color: deepskyblue;
+  text-align: center;
+  order: 1;
+
+   /* grow according to available space  */
+
+  flex-grow: 4;
+}
+.item-b {
+  width: 10vw;
+  height: 30vw;
+  background-color: lawngreen;
+  text-align: center;
+ flex-grow: 2;
+  /* defines the order of item */
+  order: 1;
+}
+.item-c {
+  width: 10vw;
+  height: 20vw;
+  background-color: pink;
+  text-align: center;
+
+   /* shrink according to available space  */
+
+  flex-shrink: 2;
+
+  
+  /* ability to align itself  */
+
+  align-self: flex-end;
+}
+.align-content {
+  width: 100vw;
+  height: 60vw;
+  background-color: turquoise;
+  align-content: space-between;
+  /* align-content: space-around; */
+  /* align-content: stretch; */
+  /* align-content: flex-end; */
+  /* align-content: flex-start; */
+}
